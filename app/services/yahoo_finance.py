@@ -1,0 +1,1 @@
+# Integração Yahoo Finance
