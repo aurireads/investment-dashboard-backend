@@ -33,8 +33,7 @@ RUN poetry config virtualenvs.create false \
 # Copy application code
 COPY ./app /app/app
 COPY ./alembic /app/alembic
-COPY ./alembic.ini /app/
-COPY ./.env* /app/
+COPY ./alembic/alembic.ini /app/
 
 # Create non-root user
 RUN adduser --disabled-password --gecos '' appuser && \
